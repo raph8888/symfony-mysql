@@ -1,3 +1,11 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+blog_list:
+    path:      /lucky
+    defaults:  { _controller: AppBundle:Lucky:list }
+
+blog_show:
+    path:      /lucky/{slug}
+    defaults:  { _controller: AppBundle:Lucky:show }
